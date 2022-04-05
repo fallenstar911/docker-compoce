@@ -5,7 +5,7 @@ services:
   dev:
     volumes:
 #      /usr/local/tomcat9/webapps/
-      - /shareprod:/boxfuse-sample-java-war-hello/target/
+      - shareprod:/boxfuse-sample-java-war-hello/target/
     build: ./
   prod:
     image: tomcat:9.0.62-jdk11-temurin-focal
