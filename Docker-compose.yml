@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  dev:
+    build: ./
+    volumes:
+      - data-volume:/boxfuse-sample-java-war-hello/
+  prod:
+    image: tomcat:9.0.62-jdk11-temurin-focal
+    volumes:
+      - data-volume:/usr/local/tomcat/webapps/
+    ports:
+      - "8080:8080"
+volumes:
+  data-volume:
+
+
