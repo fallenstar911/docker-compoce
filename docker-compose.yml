@@ -7,7 +7,7 @@ services:
       - shareprod:/boxfuse-sample-java-war-hello/target/
     build: ./
   prod:
-    image: tomcat:9.0.62-jdk11-temurin-focal
+    image: tomcat:9-jre8-alpine
     volumes:
       - shareprod:/usr/local/tomcat/webapps/
     ports:
