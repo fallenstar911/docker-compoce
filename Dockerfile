@@ -5,3 +5,4 @@ RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git \
 && cd ./boxfuse-sample-java-war-hello && mvn package \
 && mkdir /var/shareprod && pwd \
 && cp ./target/*.war /var/shareprod/
+CMD ["/bin/bash"]

@@ -4,7 +4,6 @@ volumes:
 services:
   dev:
     volumes:
-#      /usr/local/tomcat9/webapps/
       - shareprod:/boxfuse-sample-java-war-hello/target/
     build: ./
   prod:
